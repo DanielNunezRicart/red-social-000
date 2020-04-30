@@ -24,6 +24,13 @@ public class MuroTest {
         muro.addEntradaFoto(entrada04);
 
         System.out.println(muro);
+
+        String resultadoEsperado = "Usuario: Nacho\nLikes: 0\nRecién llegado de mis vacaciones en Hawai!\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
+        resultadoEsperado += "Usuario: Begoña\nLikes: 0\nEstá lloviendo ahí fuera...\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
+        resultadoEsperado += "Usuario: Luis\nLikes: 0\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
+        resultadoEsperado += "Usuario: Cristina\nLikes: 0\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
+
+        assertEquals(resultadoEsperado, muro.toString());
     }
 
 }
