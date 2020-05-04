@@ -47,4 +47,14 @@ public class EntradaTexto extends Entrada{
 
         return aDevolver;
     }
+
+    /**
+     * Método que muestra por pantalla el autor y el mensaje de una WntradaTexto en el siguiente formato:
+     * Autor: Luis
+     * Mensaje: Hola mundo!
+     */
+    public void mostrarAutorYMensaje() {
+        String aDevolver = "Autor: " + getUsuario() + "\n" + "Mensaje: " + mensaje;
+        System.out.println(aDevolver);
+    }
 }

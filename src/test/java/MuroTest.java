@@ -32,5 +32,4 @@ public class MuroTest {
 
         assertEquals(resultadoEsperado, muro.toString());
     }
-
 }
