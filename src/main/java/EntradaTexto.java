@@ -8,7 +8,7 @@
  *  @version 1.0
  */
 
-public class EntradaTexto extends Entrada{
+public class EntradaTexto extends ComentariosEntrada{
     // Contenido de la entrada.
     private String mensaje;
 
