@@ -20,18 +20,18 @@ public class MuroTest {
         EntradaEvento entrada05 = new EntradaEvento("Juan", "Juan se ha unido al grupo");
         EntradaEvento entrada06 = new EntradaEvento("Pedro", "¡Pedro y Juan ahora son amigos!");
 
-        muro.addEntradaTexto(entrada01);
-        muro.addEntradaFoto(entrada02);
-        muro.addEntradaTexto(entrada03);
-        muro.addEntradaFoto(entrada04);
-        muro.addEntradaEvento(entrada05);
-        muro.addEntradaEvento(entrada06);
+        muro.addEntrada(entrada01);
+        muro.addEntrada(entrada02);
+        muro.addEntrada(entrada03);
+        muro.addEntrada(entrada04);
+        muro.addEntrada(entrada05);
+        muro.addEntrada(entrada06);
 
         System.out.println(muro);
 
         String resultadoEsperado = "Usuario: Nacho\nLikes: 0\nRecién llegado de mis vacaciones en Hawai!\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
-        resultadoEsperado += "Usuario: Begoña\nLikes: 0\nEstá lloviendo ahí fuera...\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
         resultadoEsperado += "Usuario: Luis\nLikes: 0\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
+        resultadoEsperado += "Usuario: Begoña\nLikes: 0\nEstá lloviendo ahí fuera...\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
         resultadoEsperado += "Usuario: Cristina\nLikes: 0\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
         resultadoEsperado += "Usuario: Juan\nLikes: 0\nEvento: Juan se ha unido al grupo\nEscrito hace 10 segundos\n\n\n";
         resultadoEsperado += "Usuario: Pedro\nLikes: 0\nEvento: ¡Pedro y Juan ahora son amigos!\nEscrito hace 10 segundos\n\n\n";

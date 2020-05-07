@@ -7,16 +7,16 @@ import java.util.ArrayList;
  * @author Daniel Núñez Ricart
  * @version 1.0
  */
-public class ComentariosEntrada extends Entrada{
+public class EntradaComentarios extends Entrada{
 
     private ArrayList<String> comentarios;
 
     /**
-     * Cosntructor de la clase ComentariosEntrada.
+     * Cosntructor de la clase EntradaComentarios.
      *
      * @param autor El autor de la entrada que se le pasa a la superclase.
      */
-    public ComentariosEntrada (String autor) {
+    public EntradaComentarios (String autor) {
         super(autor);
         comentarios = new ArrayList<>();
     }
