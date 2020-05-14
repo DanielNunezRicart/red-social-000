@@ -29,12 +29,12 @@ public class MuroTest {
 
         System.out.println(muro);
 
-        String resultadoEsperado = "Usuario: Nacho\nLikes: 0\nRecién llegado de mis vacaciones en Hawai!\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
-        resultadoEsperado += "Usuario: Luis\nLikes: 0\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
-        resultadoEsperado += "Usuario: Begoña\nLikes: 0\nEstá lloviendo ahí fuera...\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
-        resultadoEsperado += "Usuario: Cristina\nLikes: 0\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\nEscrito hace 10 segundos\nNo hay comentarios\n\n\n";
-        resultadoEsperado += "Usuario: Juan\nLikes: 0\nEvento: Juan se ha unido al grupo\nEscrito hace 10 segundos\n\n\n";
-        resultadoEsperado += "Usuario: Pedro\nLikes: 0\nEvento: ¡Pedro y Juan ahora son amigos!\nEscrito hace 10 segundos\n\n\n";
+        String resultadoEsperado = "Usuario: Nacho\nEscrito hace 10 segundos\nLikes: 0\nNo hay comentarios\nRecién llegado de mis vacaciones en Hawai!\n\n\n";
+        resultadoEsperado += "Usuario: Luis\nEscrito hace 10 segundos\nLikes: 0\nNo hay comentarios\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\n\n\n";
+        resultadoEsperado += "Usuario: Begoña\nEscrito hace 10 segundos\nLikes: 0\nNo hay comentarios\nEstá lloviendo ahí fuera...\n\n\n";
+        resultadoEsperado += "Usuario: Cristina\nEscrito hace 10 segundos\nLikes: 0\nNo hay comentarios\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\n\n\n";
+        resultadoEsperado += "Usuario: Juan\nEscrito hace 10 segundos\nLikes: 0\nEvento: Juan se ha unido al grupo\n\n\n";
+        resultadoEsperado += "Usuario: Pedro\nEscrito hace 10 segundos\nLikes: 0\nEvento: ¡Pedro y Juan ahora son amigos!\n\n\n";
 
         assertEquals(resultadoEsperado, muro.toString());
     }

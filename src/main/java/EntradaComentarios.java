@@ -47,4 +47,18 @@ public class EntradaComentarios extends Entrada{
     public void addComentario(String comentario) {
         comentarios.add(comentario);
     }
+
+    /**
+     * @return Devuelve una cadena con toda la informacion de la entrada.
+     */
+    @Override
+    public String toString() {
+        String aDevolver = "";
+
+        aDevolver += super.toString();
+        aDevolver += getComentarios() + "\n";
+
+        return aDevolver;
+    }
+
 }

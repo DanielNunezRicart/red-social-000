@@ -62,9 +62,17 @@ public class Entrada {
         return "Escrito hace 10 segundos";
     }
 
-    @Override
+    /**
+     * @return Devuelve una cadena con toda la informacion de la entrada.
+     */
     public String toString() {
-        return "";
+        String aDevolver = "";
+
+        aDevolver += "Usuario: " + getUsuario() + "\n";
+        aDevolver += getTiempo() + "\n";
+        aDevolver += "Likes: " + getMeGusta() + "\n";
+
+        return aDevolver;
     }
 
 }

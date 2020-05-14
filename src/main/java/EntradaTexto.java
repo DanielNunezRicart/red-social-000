@@ -39,11 +39,8 @@ public class EntradaTexto extends EntradaComentarios {
     public String toString() {
         String aDevolver = "";
 
-        aDevolver += "Usuario: " + getUsuario() + "\n";
-        aDevolver += "Likes: " + getMeGusta() + "\n";
+        aDevolver += super.toString();
         aDevolver += mensaje + "\n";
-        aDevolver += getTiempo() + "\n";
-        aDevolver += getComentarios() + "\n";
 
         return aDevolver;
     }
