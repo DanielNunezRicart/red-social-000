@@ -39,4 +39,11 @@ public class EntradaEvento extends Entrada{
 
         return aDevolver;
     }
+
+    /**
+     * Método que muestra por pantalla los detalles de la entrada, dependiendo del tipo de ésta.
+     */
+    public void mostrarDetallesPorPantalla() {
+        System.out.println("Evento: " + mensajeEvento);
+    }
 }

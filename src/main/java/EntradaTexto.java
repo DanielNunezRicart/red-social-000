@@ -54,4 +54,11 @@ public class EntradaTexto extends EntradaComentarios {
         String aDevolver = "Autor: " + getUsuario() + "\n" + "Mensaje: " + mensaje;
         System.out.println(aDevolver);
     }
+    /**
+     * Método que muestra por pantalla los detalles de la entrada, dependiendo del tipo de ésta.
+     */
+    public void mostrarDetallesPorPantalla() {
+        System.out.println("Mensaje: " + mensaje);
+    }
+
 }

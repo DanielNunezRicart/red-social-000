@@ -38,4 +38,25 @@ public class MuroTest {
 
         assertEquals(resultadoEsperado, muro.toString());
     }
+
+    @Test
+    public void test02() {
+        Muro muro = new Muro();
+
+        EntradaTexto entrada01 = new EntradaTexto("Nacho", "Recién llegado de mis vacaciones en Hawai!");
+        EntradaFoto entrada02 = new EntradaFoto("Luis", "https://bit.ly/2W1dO09", "Gracias");
+        EntradaTexto entrada03 = new EntradaTexto("Begoña", "Está lloviendo ahí fuera...");
+        EntradaFoto entrada04 = new EntradaFoto("Cristina", "https://bit.ly/3cY9vtD", "Una foto de mi nevera");
+        EntradaEvento entrada05 = new EntradaEvento("Juan", "Juan se ha unido al grupo");
+        EntradaEvento entrada06 = new EntradaEvento("Pedro", "¡Pedro y Juan ahora son amigos!");
+
+        muro.addEntrada(entrada01);
+        muro.addEntrada(entrada02);
+        muro.addEntrada(entrada03);
+        muro.addEntrada(entrada04);
+        muro.addEntrada(entrada05);
+        muro.addEntrada(entrada06);
+
+        muro.mostrarDetallesTodasLasEntradas();
+    }
 }

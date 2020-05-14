@@ -56,4 +56,11 @@ public class EntradaFoto extends EntradaComentarios {
 
         return aDevolver;
     }
+
+    /**
+     * Método que muestra por pantalla los detalles de la entrada, dependiendo del tipo de ésta.
+     */
+    public void mostrarDetallesPorPantalla() {
+        System.out.println("Url: " + urlImagen + "\nTitulo: " + titulo);
+    }
 }
