@@ -59,4 +59,35 @@ public class MuroTest {
 
         muro.mostrarDetallesTodasLasEntradas();
     }
+
+    @Test
+    public void test03() {
+        Muro muro = new Muro();
+
+        EntradaTexto entrada01 = new EntradaTexto("Nacho", "Recién llegado de mis vacaciones en Hawai!");
+        EntradaTexto entrada02 = new EntradaTexto("Begoña", "Está lloviendo ahí fuera...");
+        EntradaEvento entrada03 = new EntradaEvento("Juan", "Juan se ha unido al grupo");
+        EntradaFoto entrada04 = new EntradaFoto("Luis", "https://bit.ly/2W1dO09", "Gracias");
+        EntradaFoto entrada05 = new EntradaFoto("Cristina", "https://bit.ly/3cY9vtD", "Una foto de mi nevera");
+
+        muro.addEntrada(entrada01);
+        muro.addEntrada(entrada02);
+        muro.addEntrada(entrada03);
+        muro.addEntrada(entrada04);
+        muro.addEntrada(entrada05);
+
+        muro.getUrlsFotos();
+
+        Muro muro2 = new Muro();
+
+        EntradaTexto entrada06 = new EntradaTexto("Nacho", "Recién llegado de mis vacaciones en Hawai!");
+        EntradaTexto entrada07 = new EntradaTexto("Begoña", "Está lloviendo ahí fuera...");
+        EntradaEvento entrada08 = new EntradaEvento("Juan", "Juan se ha unido al grupo");
+
+        muro2.addEntrada(entrada06);
+        muro2.addEntrada(entrada07);
+        muro2.addEntrada(entrada08);
+
+        muro2.getUrlsFotos();
+    }
 }
